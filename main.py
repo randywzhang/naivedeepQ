@@ -6,7 +6,7 @@ import gym
 if __name__ == '__main__':
     env = gym.make('LunarLander-v2')
     n_games = 500
-    agent = Agent(learning_rate=0.0005, gamma=0.99, n_actions=4, epsilon=1.0,
+    agent = Agent(learning_rate=0.005, gamma=0.99, n_actions=4, epsilon=1.0,
                   batch_size=64, input_dims=8, discrete=True)
 
     # agent.load_model()

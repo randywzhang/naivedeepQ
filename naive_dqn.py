@@ -258,7 +258,7 @@ class Agent(object):
             pass
 
         # train the evaluation network on the target reward
-        _ = self.q_eval.fit(state, target_reward, verbose='0')
+        _ = self.q_eval.fit(state, target_reward, verbose=0)
 
         self.epsilon *= self.epsilon_decrement
         if self.epsilon < self.epsilon_min:
